@@ -1,0 +1,1 @@
+A super fast Wordpress theme boilerplate to style to taste
