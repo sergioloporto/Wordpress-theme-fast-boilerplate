@@ -1,0 +1,4 @@
+rules:
+
+  # Disallows
+  no-css-comments: 0

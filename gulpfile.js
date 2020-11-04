@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const babel = require("gulp-babel");
 const sass = require("gulp-sass");
+const sassLint = require("gulp-sass-lint");
 const sourcemaps = require("gulp-sourcemaps");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync");
@@ -34,6 +35,13 @@ gulp.task("browser-sync", function() {
 const css = function() {
   return gulp
     .src("./scss/main.scss")
+    // Sass Lint
+    .pipe(sassLint({
+      configFile: '.sass-lint.yml'
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+    // Source Maps
     .pipe(sourcemaps.init())
     .pipe(
       sass({
