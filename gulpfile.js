@@ -14,7 +14,7 @@ gulp.task('babel', () =>
   .pipe(babel({
       presets: ['@babel/env']
   }))
-  .pipe(concat('main.js'))
+  .pipe(concat('all.js'))
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('.'))
   .pipe(reload({ stream: true }))
@@ -23,7 +23,7 @@ gulp.task('babel', () =>
 gulp.task('browser-sync', function() {
   const files = ['./scss/*.s+(a|c)ss', './*.php', './js/*.js',];
   browserSync.init(files, {
-    proxy: 'https://yoursitename.local',
+    proxy: 'http://newtheme:81',
     notify: true
   });
   gulp.watch('./scss/**/*.s+(a|c)ss', gulp.series(css));
