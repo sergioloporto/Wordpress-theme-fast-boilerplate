@@ -1,3 +1,7 @@
-.front-page p{font-size:40px;color:dodgerblue;text-align:center}
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZyb250LXBhZ2UvX2Zyb250X3BhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUNJLGNBQWUsQ0FDZixnQkFBaUIsQ0FDakIsaUJBQWtCIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZyb250LXBhZ2UgcCB7XG4gICAgZm9udC1zaXplOiA0MHB4O1xuICAgIGNvbG9yOiBkb2RnZXJibHVlO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn0iXX0= */
+/*!
+Theme Name: newtheme
+Author: Sergio Lo Porto
+Version: 1.0
+License: All rights reserved!
+Text Domain: newtheme
+*/.front-page p{font-size:40px;color:#1e90ff;text-align:center}
